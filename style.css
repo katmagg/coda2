@@ -1,39 +1,23 @@
-@import url(https://fonts.googleapis.com/css?family=Hind); /*--- Body Font --*/
-@import url(https://fonts.googleapis.com/css?family=Nobile); /*--- Heading Font --*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100&display=swap'); /*--- Body Font --*/
+
 /* reset style, takes all inherited margins that our browser wants to give the html document by default */
 *{
     margin: 0;
     border: 0;
     padding: 0;
+    
 }
 body, html {
     background-color: #FFF;
-    font-family: 'Hind', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     /* the default position. Tells the browser the position is relative to the style we have here*/
     position: relative;
 }
-h1 {
-    font-family: 'Nobile', sans-serif;
-    text-align: center;
-    font-size: 175%;
-    color: #4A4444;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 3% 0%;
+.active {
+    font-weight:bold;
 }
-h3 {
-    font-family: 'Nobile', sans-serif;
-    text-align: center;
-    color: #4A4444;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-p {
-    padding: 2%;
-    color: #4A4444;
-    text-align: justify;
-}
+
 img {
     max-width: 100%;
     height: auto;
@@ -43,6 +27,33 @@ img {
     max-width: 1280px;
     margin: 0 auto;
 }
+#banner-wrapper h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 175%;
+    color: #ffffff;
+    letter-spacing: 3px;
+    padding: 3% 0%;
+}
+#banner-wrapper h3{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 100%;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 3% 0%;
+}
+#banner-wrapper p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 75%;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 3% 0%;
+    width: 90%;
+}
 /*----Start Image Slider Style ---*/
 .slider {
     width: 100%;
@@ -50,6 +61,28 @@ img {
 .slider1 img {
     min-width: 100%;
     margin: 0 auto;
+}
+.bullet-list {
+    width: 90%;
+    float: center;
+    margin: 2% 0% 3% 4%;
+    line-height: 200%;
+}
+.bullet-list, p.link{
+    line-height: 20%;
+}]
+.bullet-list, h3 {
+    margin-left:50px;
+    margin: 2% 0% 3% 4%;
+    text-align: left;
+    line-height: 200%;
+}
+.bullet-list ,ul{
+    margin-left:40px;
+    margin: 2% 0% 3% 4%;
+  }
+.bullet-list, p{
+    line-height: 100%;
 }
 /*  For styling the prev and next links for the slider*/
 .slider .bx-wrapper .bx-controls-direction a {
@@ -84,10 +117,77 @@ img {
 /*----End Image Slider Style ---*/
 .one-whole{
     width: 90%;
-    float: left;
+    float: center;
+    margin: 2% 0% 3% 4%;
+    text-align: center;
+    line-height: 200%;
+    font-size: 14px;
+}
+.one-whole, .meginmal {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    line-height: 1.6em;
+}
+.one-whole, h3{
+   font-size: 30px;
+}
+.one-whole, th{
+    font-size: 20px;
+ }
+ .one-whole, p{
+    font-size: 20px;
+    font-weight: 3000;
+ }
+ .parallax-1, parallax-inner, #banner-wrapper, h1{
+     font-size: 40px;
+ }
+ .parallax-1, parallax-inner, #banner-wrapper, p{
+    font-size: 40px;
+    padding: 20px;
+}
+.one-whole-parallax{
+    width: 90%;
+    float: center;
+    margin: 2% 0% 3% 4%;
+    text-align: center;
+    line-height: 200%;
+}
+.one-whole-parallax p{
+    width: 90%;
+    float: center;
     margin: 2% 0% 3% 4%;
     text-align: center;
 }
+.one-whole p{
+
+}
+.things_in_lists{
+    width: 90%;
+    float: center;
+    margin: 2% 0% 3% 4%;
+    text-align: center;
+    line-height: 200%;
+    padding-top:50px;
+
+}
+.things_in_lists, h3{
+text-align: center;
+margin: 10px;
+}
+.things_in_lists, h4{
+    text-align: left;
+    margin: 20px;
+    font-weight:bold;
+}
+.things_in_lists, li{
+    text-align: left;
+    line-height: 1.6em;
+}  
+.things_in_lists, ul{
+    text-align: center;
+    line-height: 1.6em;
+}    
 .one-half {
     width: 44%;
     text-align: center;
@@ -120,10 +220,17 @@ img {
 .parallax-1 {
     background: url('../img/backlit-clouds-friends-853168.jpg') repeat fixed 100%;
     text-align: center;
+    font-family: 'Nobile', sans-serif;
+    text-align: center;
+    font-size: 175%;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 3% 0%;
 }
 .parallax-inner {
     padding-top: 90px;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
 }
 .parallax-2 {
     background: url('../img/backlit-bright-dawn-697243.jpg') repeat fixed 100%;
@@ -136,7 +243,21 @@ img {
 .parallax-inner h3, .parallax-inner p {
     color: #F1F1F1
 }
+tr, table-header{
+    font-size: 16px;
+}
 
+table{
+border-collapse: collapse;
+width: 80%;
+}
+th {
+    height: 80px;
+}
+.list_of_things, p{
+    font-size: 16px;
+    line-height:100px;
+}
 /*-- End parallax sections*/
 
 footer {
@@ -149,12 +270,13 @@ footer {
 }
 footer p{
     color: #FFF;
+    font-size: 20px;
 }
 
 /*---Start Mediaqueries --*/
 @media screen and (max-width: 768px) {
     .slider .bx-wrapper .bx-controls {
-        dislpay: none;
+        display: none;
     }
 
     .one-third {
