@@ -10,7 +10,7 @@
 body, html {
     background-color: #FFF;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     /* the default position. Tells the browser the position is relative to the style we have here*/
     position: relative;
 }
@@ -34,6 +34,11 @@ img {
     color: #ffffff;
     letter-spacing: 3px;
     padding: 3% 0%;
+}
+.gormabok{
+    max-width: 100%;
+    height: auto;
+    
 }
 #banner-wrapper h3{
     font-family: 'Roboto', sans-serif;
@@ -132,12 +137,22 @@ img {
 .one-whole, h3{
    font-size: 30px;
 }
+.one-whole, h2{
+    font-size: 30px;
+    text-align: center;
+ }
+ .one-whole, h4{
+    text-align: center;
+ }
 .one-whole, th{
     font-size: 20px;
  }
  .one-whole, p{
     font-size: 20px;
     font-weight: 3000;
+ }
+ #h4bold{
+     font-weight:bold;
  }
  .parallax-1, parallax-inner, #banner-wrapper, h1{
      font-size: 40px;
@@ -188,6 +203,9 @@ margin: 10px;
     text-align: center;
     line-height: 1.6em;
 }    
+.one-whole, h4{
+    font-weight: 900;
+}
 .one-half {
     width: 44%;
     text-align: center;
@@ -199,6 +217,15 @@ margin: 10px;
     float: left;
     margin: 2% 0% 3% 4%;
     text-align: center;
+}
+.one-third , h4{
+    width: 28%;
+    float: left;
+    margin: 2% 0% 3% 4%;
+    text-align: center;
+}
+.one-third ,ul{
+    font-size:16px;
 }
 .left-col {
     width: 60%;
