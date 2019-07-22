@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <head>
 	<!--- for mobile versions meta name blablabla -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php include(form_process.php); ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Coda</title>
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<link href="style.css" rel="stylesheet">
@@ -46,8 +47,55 @@
 
 
 	<div class="one-whole">
-		<p>Hægt er að hafa samband við CoDA samtökin í gegnum netfangið bok@coda.is</p>
-			
+<!--
+           <h3>Hafðu samband</h3>
+
+           <div class="contact-form">
+               <form id="contact-form" method="post" action="contact_form_handler.php">
+                   <input name="name" type="text" class="form-control" placeholder="Nafn" required>
+                   <br>
+                   <input name="email" type="email" class="form-control" placeholder="Netfang" required>
+                <br>
+                    <textarea name="message" class="form-control" placeholder="Skrifaðu skilaboðin hér" row="4" required>
+
+                    </textarea>
+                    <input type="submit" class="form-control submit" value="SEND MESSAGE">
+               </form>
+           </div>
+        -->
+        <?php include(form_process.php); ?>
+<link rel="stylesheet" href="form.css" type="text/css"> 
+<div class="container">  
+                    <form id="contact" action="<?= $SERVER['PHP_SELF'];?>" method="post">
+                      <h3>Hafðu samband við okkur</h3>
+                      <fieldset>
+                        <input placeholder="Nafn" type="text" tabindex="1"  name="name" value="<?= $name ?>" autofocus>
+                        <span class="error"><?= $name_error ?></span>
+                      </fieldset>
+                      <fieldset>
+                        <input placeholder="Netfang" type="text" name="email" value="<?= $email ?>" tabindex="2" >
+                        <span class="error"><?= $email_error ?></span>
+
+                      </fieldset>
+                      <fieldset>
+                        <textarea placeholder="Skrifaðu skilaboðin hér" type="text" name="message" value="<?= $message ?>" tabindex="5" ></textarea>
+                      </fieldset>
+                      <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sendi">Senda skilaboð</button>
+                      </fieldset>
+                      <div class ="success"><?= $success; ?></div>
+                    </form>
+                   
+                    
+                  </div>
+
+        
+<!----
+        <h3>Hafa samband</h3>
+        <ul>Hægt er að hafa samband við CoDA samtökin í gegnum netfangið bok@coda.is.</ul>
+    -->
+
+        
 
 	</div>
 <!-- End Banner Wrapper-->
